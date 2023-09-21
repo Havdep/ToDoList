@@ -31,8 +31,14 @@ function TodoForm() {
 
   return (
     <>
-      <body className="bg-gradient-to-r from-cyan-200 to-blue-500 ...">
-        <h1 className="text-5xl font-bold m-4 text-gray-700">ToDo List</h1>
+      <div
+        className="flex flex-col items-center justify-center min-h-screen bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-2430.jpg?size=626&ext=jpg&ga=GA1.2.330349178.1694695814&semt=ais')",
+        }}
+      >
+        <h1 className="text-5xl font-bold mb-2 text-gray-700">ToDo List</h1>
         <form className="flex-row " onSubmit={handleSubmit}>
           <input
             className="  bg-white text-cyan-500 font-extrabold"
@@ -50,7 +56,7 @@ function TodoForm() {
           >
             Add Your Task
           </button>
-          <p className="text-3xl">Your Tasks:</p>
+          <p className="text-4xl font-thin">Your Tasks:</p>
 
           {list.map((item, id) => (
             <div key={id}>
@@ -77,7 +83,7 @@ function TodoForm() {
             Remove All
           </button>
         )}
-      </body>
+      </div>
     </>
   );
 }
