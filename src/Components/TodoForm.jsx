@@ -62,7 +62,7 @@ function TodoForm() {
             <div key={id}>
               <p
                 key={id}
-                className="mt-2 text-orange-500 text-2xl font-semibold font-sans"
+                className="mt-2 text-blue-900 text-2xl font-semibold font-sans"
               >
                 {item}
               </p>
